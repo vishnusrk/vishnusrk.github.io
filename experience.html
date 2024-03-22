@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+        <title>Vishnu Sreekanth</title>
+        <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+        <script>
+            
+            function scrollToSpecifiedSection(specifiedSection) {
+                document.getElementById(specifiedSection).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            }
+
+            function showOrHidePopUpMenu() {
+                if (document.getElementById("popUpMenu").style.display === "block") {
+                    document.getElementById("popUpMenu").style.display = "none";
+                } else {
+                    document.getElementById("popUpMenu").style.display = "block"
+                }
+            }
+
+        </script>
+    </head> 
+    <nav>
+        <div class="navBarLogo">
+            <a href="index.html"><img src="img/MainLogo.png"></a>
+        </div>
+        <div class="navBarLinks">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about-me.html">About</a></li>
+                <li><a href="experience.html" class="alreadyOnPageOfLink">Experience</a></li>
+                <li><a href="projects.html">Projects</a></li>
+            </ul>
+            <div class="hamburgerMenu">
+                <img src="img/HamburgerMenu.png" onclick="showOrHidePopUpMenu()">
+            </div>
+        </div>
+        <div class="break"></div>
+        <div id="popUpMenu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about-me.html">About</a></li>
+                <li><a href="experience.html" class="alreadyOnPageOfLink">Experience</a></li>
+                <li><a href="projects.html">Projects</a></li>
+            </ul>
+        </div>
+    </nav>
+    <body>
+        <div id="experiencePage">
+            <h1>
+                Experience
+            </h1>
+            <div class="centeredParagraph">
+                <p>
+                    Below you will find my work experience, education, and lists of 
+                    programming languages and technologies that I am fluent in. 
+                </p>
+            </div>
+            <h2 class="experienceSectionTitle">
+                Work/Technical Experience
+            </h2>
+            <div class="smallRow" style="background-color: #eee">
+                <div class="smallRowText">
+                    <h3>Software Engineering Intern</h3>
+                    <h4>WellSky/Nitor Infotech</h4>
+                    <h4>August 2021 - November 2021</h4>
+                    <p>
+                        Assisted in the development of the UI/UX of an innovative patient referral workflow 
+                        management system while being mentored by a senior designer.
+                    </p>   
+                </div>
+                <div class="smallRowImage">
+                    <img src="img/InternshipIcon.png">
+                </div>
+            </div>
+            <div class="smallRow" style="background-color: #eee">
+                <div class="smallRowText">
+                    <h3>Founder</h3>
+                    <h4>Akshara Abhyasa</h4>
+                    <h4>2021 - 2022</h4>
+                    <p>
+                        Designed, built, and hosted a non-profit website that raised money for 
+                        providing desks and care packages to school children in India.   
+                    </p>   
+                </div>
+                <div class="smallRowImage">
+                    <img src="img/AksharaAbhyasa.png">
+                </div>
+            </div>
+            <h2 class="experienceSectionTitle">
+                Education
+            </h2>
+            <div class="smallRow" style="background-color: #eee">
+                <div class="smallRowText">
+                    <h3>University of Maryland</h3>
+                    <h4>B.S., Computer Science</h4>
+                    <h4>2022 - 2026</h4>
+                    <p>
+                        GPA: 3.98<br><br>
+                        Computer Science GPA: 4.00<br><br>
+                        Relevant Courses: Object Oriented Programming, Computer Systems, 
+                        Discrete Structures, Organization of Programming Languages, Algorithms, 
+                        Calculus, Linear Algebra, Applied Statistics and Probability, MATLAB
+                    </p>   
+                </div>
+                <div class="smallRowImage">
+                    <img src="img/UMD.png">
+                </div>
+            </div>
+            <div class="smallRow" style="background-color: #eee">
+                <div class="smallRowText">
+                    <h3>River Hill High School</h3>
+                    <h4>High School Diploma</h4>
+                    <h4>2018 - 2022</h4>
+                    <p>
+                        GPA: 3.97<br><br>
+                        Relevant Courses: AP Computer Science Principles, 
+                        Java Programming, AP Computer Science A, Object Oriented Design, 
+                        Advanced Data Structures
+                    </p>   
+                </div>
+                <div class="smallRowImage">
+                    <img src="img/RHHS.png">
+                </div>
+            </div>
+            <h2 class="experienceSectionTitle">
+                Programming Languages and Frameworks
+            </h2>
+            <div class="smallRow" style="background-color: #eee">
+                <div class="smallRowText">
+                    <h3>Java</h3>
+                    <p>
+                        I am most fluent with Java. I first learned it in middle school and used it for the bulk 
+                        of my high school computing courses. It has been the primary language that I 
+                        have used in college too.
+                    </p>   
+                </div>
+                <div class="smallRowImage">
+                    <img src="img/Java.png">
+                </div>
+            </div>
+            <div class="smallRow" style="background-color: #eee">
+                <div class="smallRowText">
+                    <h3>JavaScript</h3>
+                    <p>
+                        I have used JavaScript in high school coursework and most personal 
+                        projects. I picked it up quickly after Java, and enjoy using both React and Node.js. 
+                    </p>   
+                </div>
+                <div class="smallRowImage">
+                    <img src="img/JS.png">
+                </div>
+            </div>
+            <div class="smallRow" style="background-color: #eee">
+                <div class="smallRowText">
+                    <h3>C</h3>
+                    <p>
+                        I first learnt C in my Computer Systems course and became fluent 
+                        through systems programming in multiple large projects. I am enthusiastic to dive into more systems programming and optimization with C.
+                    </p>   
+                </div>
+                <div class="smallRowImage">
+                    <img src="img/C.png">
+                </div>
+            </div>
+            <div class="smallRow" style="background-color: #eee">
+                <div class="smallRowText">
+                    <h3>React</h3>
+                    <p>
+                        I have used React to build numerous user interfaces. I enjoy how the paradigm 
+                        seamlessly combines aesthetics and functionality in an organized fashion to provide a canvas 
+                        for endless creativity.
+                    </p>   
+                </div>
+                <div class="smallRowImage">
+                    <img src="img/React.png">
+                </div>
+            </div>
+            <div class="smallRow" style="background-color: #eee">
+                <div class="smallRowText">
+                    <h3>Express.js</h3>
+                    <p>
+                        I used Express to write server side code for a CRUD application. Its capabilities 
+                        with managing the server side of an application allow for rapid development.
+                    </p>   
+                </div>
+                <div class="smallRowImage">
+                    <img src="img/Express.png">
+                </div>
+            </div>
+            <div class="smallRow" style="background-color: #eee">
+                <div class="smallRowText">
+                    <h3>Swift</h3>
+                    <p>
+                        I built my first iOS app with Swift, and loved the modern aspects of the language
+                        and its suitability for iOS development. I have also manipulated and stored data
+                        using Swift's CoreData framework.
+                    </p>   
+                </div>
+                <div class="smallRowImage">
+                    <img src="img/Swift.png">
+                </div>
+            </div>
+            <div class="smallRow" style="background-color: #eee">
+                <div class="smallRowText">
+                    <h3>OCaml</h3>
+                    <p>
+                        OCaml was my first exposure to functional programming, and I have done a variety of projects with it for my Programming Languages  
+                        coursework.
+                    </p>   
+                </div>
+                <div class="smallRowImage">
+                    <img src="img/OCaml.png">
+                </div>
+            </div>
+            <div class="smallRow" style="background-color: #eee">
+                <div class="smallRowText">
+                    <h3>MySQL</h3>
+                    <p>
+                        Persistent data storage on the server side led me to use MySQL in my full stack application work.
+                    </p>   
+                </div>
+                <div class="smallRowImage">
+                    <img src="img/MySQL.png">
+                </div>
+            </div>
+            <div class="smallRow" style="background-color: #eee">
+                <div class="smallRowText">
+                    <h3>HTML/CSS</h3>
+                    <p>
+                        I first used HTML and CSS in a complete way to build a website to raise money for village schools in India (Akshara Abhyasa). 
+                        Since then, I've also interspersed website development with React JSX.
+                    </p>   
+                </div>
+                <div class="smallRowImage">
+                    <img src="img/HTMLCSS.png">
+                </div>
+            </div>
+            <div class="smallRow" style="background-color: #eee">
+                <div class="smallRowText">
+                    <h3>MATLAB</h3>
+                    <p>
+                        I learned MATLAB in Linear Algebra and other courses. Through project work, I have used it to model 
+                        mathematical data.
+                    </p>   
+                </div>
+                <div class="smallRowImage">
+                    <img src="img/Matlab.png">
+                </div>
+            </div>
+            <div class="smallRow" style="background-color: #eee">
+                <div class="smallRowText">
+                    <h3>R</h3>
+                    <p>
+                        I have used R in applied statistics to aggregate and manipulate data from datasets. I have used it to create visualizations and graphs.
+                    </p>   
+                </div>
+                <div class="smallRowImage">
+                    <img src="img/R.png">
+                </div>
+            </div>
+            <div class="smallRow" style="background-color: #eee">
+                <div class="smallRowText">
+                    <h3>MIPS Assembly Language</h3>
+                    <p>
+                        After learning systems programming with C, I dove into using assembly languages, in particular the 
+                        MIPS Assembly Language to learn the finer details of program execution.
+                    </p>   
+                </div>
+                <div class="smallRowImage">
+                    <img src="img/MIPS.png">
+                </div>
+            </div>
+            <h2 class="experienceSectionTitle">
+                Related Technologies
+            </h2>
+            <div class="smallRow" style="background-color: #eee">
+                <div class="smallRowText">
+                    <h3>UNIX</h3>
+                    <p>
+                        I am familiar with UNIX-based operating systems, working on them for most work I do.
+                    </p>   
+                </div>
+                <div class="smallRowImage">
+                    <img src="img/UNIX.png">
+                </div>
+            </div>
+            <div class="smallRow" style="background-color: #eee">
+                <div class="smallRowText">
+                    <h3>Node.js</h3>
+                    <p>
+                        I used Node to build web applications. Within Node, I have used Axios 
+                        to facilitate CRUD requests, and Express to route requests and process data.
+                    </p>   
+                </div>
+                <div class="smallRowImage">
+                    <img src="img/Node.png">
+                </div>
+            </div>
+            <div class="smallRow" style="background-color: #eee">
+                <div class="smallRowText">
+                    <h3>Git</h3>
+                    <p>
+                        I regularly use Git for version control in both personal projects and coursework, along with GitHub.
+                    </p>   
+                </div>
+                <div class="smallRowImage">
+                    <img src="img/Git.png">
+                </div>
+            </div>
+            <div class="centeredParagraph nextSectionPreview">
+                <p>
+                    Click below to see my projects.
+                </p>
+                <a href="projects.html">
+                    <button>Projects</button>
+                </a>
+            </div>
+        </div>
+    </body>
+    <footer>
+        <div class="footerNav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about-me.html">About</a></li>
+                <li><a href="experience.html">Experience</a></li>
+                <li><a href="projects.html">Projects</a></li>
+            </ul>
+        </div>
+        <div class="spacer"></div>
+        <div class="footerContactInfo">
+            <h1>Email:</h1>
+            <p>vishnusreekanth1577@gmail.com</p>
+	        <p>vishnus@terpmail.umd.edu</p>
+        </div>
+    </footer>
+</html>

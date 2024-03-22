@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+        <title>Vishnu Sreekanth</title>
+        <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+        <script>
+
+            function scrollToSpecifiedSection(specifiedSection) {
+                document.getElementById(specifiedSection).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            }
+
+            function showOrHidePopUpMenu() {
+                if (document.getElementById("popUpMenu").style.display === "block") {
+                    document.getElementById("popUpMenu").style.display = "none";
+                } else {
+                    document.getElementById("popUpMenu").style.display = "block"
+                }
+            }
+
+            window.addEventListener('load', function(){
+                const modalBackground = document.getElementsByClassName("modalBackground")[0];
+                const modalImage = document.getElementsByClassName("modalImage")[0];
+                const modalImageLabel = document.getElementsByClassName("modalImageLabel")[0];
+                const divs = document.getElementsByClassName("iconBubble");
+                const closeButton = document.getElementsByClassName("close")[0];
+                for (let i = 0; i < divs.length; i++) {
+                    divs[i].addEventListener('click', function() {
+                        modalImage.src = this.querySelector("img").src;
+                        modalImageLabel.innerHTML = this.querySelector("p").innerHTML;
+                        modalBackground.style.display = "block";
+                        document.body.style.overflowY = "hidden";
+                    });
+                }
+                closeButton.addEventListener('click', function() {
+                    modalBackground.style.display = "none";
+                    document.body.style.overflowY = "scroll";
+                });
+                window.onclick = function(event) {
+                    if (event.target == modalBackground) {
+                        modalBackground.style.display = "none";
+                        document.body.style.overflowY = "scroll";
+                    }
+                }
+            });
+        
+        </script>
+    </head> 
+    <nav>
+        <div class="navBarLogo">
+            <a href="index.html"><img src="img/MainLogo.png"></a>
+        </div>
+        <div class="navBarLinks">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about-me.html">About</a></li>
+                <li><a href="experience.html">Experience</a></li>
+                <li><a href="projects.html" class="alreadyOnPageOfLink">Projects</a></li>
+            </ul>
+            <div class="hamburgerMenu">
+                <img src="img/HamburgerMenu.png" onclick="showOrHidePopUpMenu()">
+            </div>
+        </div>
+        <div class="break"></div>
+        <div id="popUpMenu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about-me.html">About</a></li>
+                <li><a href="experience.html">Experience</a></li>
+                <li><a href="projects.html" class="alreadyOnPageOfLink">Projects</a></li>
+            </ul>
+        </div>
+    </nav>
+    <body>
+        <div class="modalBackground">
+            <div class="modal">
+                <span class="close">&times;</span>
+                <div class="modalContents">
+                    <img class="modalImage" src="" alt="Icon">
+                    <h4 class="modalImageLabel">Icon Name</h4>
+                </div>
+            </div>
+        </div>
+        <div id="projectsPage">
+            <h1>
+                Projects
+            </h1>
+            <div class="centeredParagraph">
+                <p>
+                    Here is a list of my software projects. At the end of this page lies a portfolio 
+                    of all the icons I have created from scratch.
+                </p>
+            </div>
+            <div class="row">
+                <div class="rowText">
+                    <p>
+                        <strong>Sample Academic Projects</strong><br><br>
+                        Click for descriptions of select projects, which range 
+                        from systems level programming to data structures.
+                    </p> 
+                    <a href="coursework-projects.html">
+                        <button>More</button>
+                    </a>  
+                </div>
+                <div class="rowImageWithVerticalPadding">
+                    <img src="img/HomepageExperienceGraphic.png">
+                </div>
+            </div>
+            <h1>
+                Personal Projects
+            </h1>
+            <div class="row topMarginBuffer">
+                <div class="rowText">
+                    <p>
+                        <strong>Cricket Scorekeeper App</strong><br><br>
+                        iOS cricket scorekeeping application with a UI that's simple and easy to use. 
+                        Keeps score during matches based on user input and saves scorecards to device. 
+                        Built with Swift/SwiftUI and CoreData.
+                    </p> 
+                    <a href="project-4.html">
+                        <button>More</button>
+                    </a>  
+                </div>
+                <div class="rowImage">
+                    <img src="img/Project4.png">
+                </div>
+            </div>
+            <div class="row">
+                <div class="rowText">
+                    <p>
+                        <strong>Cricket Team Generator</strong><br><br>
+                        Integrates with a database of professional cricketers to generate a
+                        team of 11 based upon a selected mode. Built with React, JavaScript, Express, 
+                        and MySQL.
+                    </p> 
+                    <a href="project-3.html">
+                        <button>More</button>
+                    </a>  
+                </div>
+                <div class="rowImage">
+                    <img src="img/Project3.png">
+                </div>
+            </div>
+            <div class="row">
+                <div class="rowText">
+                    <p>
+                        <strong>Tutoring Website</strong><br><br>
+                        Website for a prospective tutoring business. Uses modern 
+                        icons made from scratch and emphasizes user-friendly web design. Built with 
+                        HTML, CSS, and JavaScript.
+                    </p>   
+                    <a href="project-2.html">
+                        <button>More</button>
+                    </a>
+                </div>
+                <div class="rowImage">
+                    <img src="img/Project2.png">
+                </div>
+            </div>
+            <div class="row">
+                <div class="rowText">
+                    <p>
+                        <strong>List Ranker</strong><br><br>
+                        Tool that simplifies ranking items through pairwise comparison. Built with React.
+                    </p>   
+                    <a href="project-1.html">
+                        <button>More</button>
+                    </a>
+                </div>
+                <div class="rowImage">
+                    <img src="img/Project1.png">
+                </div>
+            </div>
+            <h1>
+                Icon Portfolio
+            </h1>
+            <div class="centeredParagraph" id="iconographyPortfolioDescription">
+                <p>
+                    Here is a sampling of icons that I have created from scratch.
+                </p>
+            </div>
+            <div class="iconRow">
+                <div class="iconBubble">
+                    <img src="img/iconportfolio/Apartment.png">
+                    <p>Apartment</p>
+                </div>
+                <div class="iconBubble">
+                    <img src="img/iconportfolio/Atom.png">
+                    <p>Atom</p>
+                </div>
+                <div class="iconBubble">
+                    <img src="img/iconportfolio/BigO.png">
+                    <p>Big O Notation</p>
+                </div>
+                <div class="iconBubble">
+                    <img src="img/iconportfolio/BinarySearchTree.png">
+                    <p>Binary Search Tree</p>
+                </div>
+                <div class="iconBubble">
+                    <img src="img/iconportfolio/Car.png">
+                    <p>Car</p>
+                </div>
+                <div class="iconBubble">
+                    <img src="img/iconportfolio/ComputerSystems.png">
+                    <p>Computer System</p>
+                </div>
+                <div class="iconBubble">
+                    <img src="img/iconportfolio/CricketBall.png">
+                    <p>Cricket Ball</p>
+                </div>
+                <div class="iconBubble">
+                    <img src="img/iconportfolio/CricketBat.png">
+                    <p>Cricket Bat</p>
+                </div>
+                <div class="iconBubble">
+                    <img src="img/iconportfolio/Database.png">
+                    <p>Database</p>
+                </div>
+                <div class="iconBubble">
+                    <img src="img/iconportfolio/DNA.png">
+                    <p>DNA</p>
+                </div>
+                <div class="iconBubble">
+                    <img src="img/iconportfolio/Email.png">
+                    <p>Email</p>
+                </div>
+                <div class="iconBubble">
+                    <img src="img/iconportfolio/Exam.png">
+                    <p>Exam</p>
+                </div>
+                <div class="iconBubble">
+                    <img src="img/iconportfolio/FunctionalProgramming.png">
+                    <p>Functional Programming</p>
+                </div>
+                <div class="iconBubble">
+                    <img src="img/iconportfolio/Graduation.png">
+                    <p>Graduate</p>
+                </div>
+                <div class="iconBubble">
+                    <img src="img/iconportfolio/GraphicDesign.png">
+                    <p>Graphic Design</p>
+                </div>
+                <div class="iconBubble">
+                    <img src="img/iconportfolio/Hammer.png">
+                    <p>Hammer</p>
+                </div>
+                <div class="iconBubble">
+                    <img src="img/iconportfolio/HashSet.png">
+                    <p>HashSet</p>
+                </div>
+                <div class="iconBubble">
+                    <img src="img/iconportfolio/Internship.png">
+                    <p>Internship</p>
+                </div>
+                <div class="iconBubble">
+                    <img src="img/iconportfolio/Laptop.png">
+                    <p>Laptop</p>
+                </div>
+                <div class="iconBubble">
+                    <img src="img/iconportfolio/LocationPin.png">
+                    <p>Location Pin</p>
+                </div>
+                <div class="iconBubble">
+                    <img src="img/iconportfolio/Lock.png">
+                    <p>Lock</p>
+                </div>
+                <div class="iconBubble">
+                    <img src="img/iconportfolio/LogicCircuit.png">
+                    <p>Logic Circuit</p>
+                </div>
+                <div class="iconBubble">
+                    <img src="img/iconportfolio/Mail.png">
+                    <p>Mail</p>
+                </div>
+                <div class="iconBubble">
+                    <img src="img/iconportfolio/Mathematics.png">
+                    <p>Mathematics</p>
+                </div>
+                <div class="iconBubble">
+                    <img src="img/iconportfolio/ObjectOrientedProgramming.png">
+                    <p>OOP</p>
+                </div>
+                <div class="iconBubble">
+                    <img src="img/iconportfolio/Person.png">
+                    <p>Person</p>
+                </div>
+                <div class="iconBubble">
+                    <img src="img/iconportfolio/ProgrammingObject.png">
+                    <p>Programming Object</p>
+                </div>
+                <div class="iconBubble">
+                    <img src="img/iconportfolio/Server.png">
+                    <p>Server</p>
+                </div>
+                <div class="iconBubble">
+                    <img src="img/iconportfolio/Smartphone.png">
+                    <p>Smartphone</p>
+                </div>
+                <div class="iconBubble">
+                    <img src="img/iconportfolio/StackOfBooks.png">
+                    <p>Stack of Books</p>
+                </div>
+                <div class="iconBubble">
+                    <img src="img/iconportfolio/Stumps.png">
+                    <p>Stumps (Cricket)</p>
+                </div>
+                <div class="iconBubble">
+                    <img src="img/iconportfolio/TableTennis.png">
+                    <p>Table Tennis</p>
+                </div>
+                <div class="iconBubble">
+                    <img src="img/iconportfolio/TennisBall.png">
+                    <p>Tennis Ball</p>
+                </div>
+                <div class="iconBubble">
+                    <img src="img/iconportfolio/Trivia.png">
+                    <p>Trivia</p>
+                </div>
+                <div class="iconBubble">
+                    <img src="img/iconportfolio/UIUX.png">
+                    <p>UI/UX Design</p>
+                </div>
+                <div class="iconBubble">
+                    <img src="img/iconportfolio/Writing.png">
+                    <p>Writing</p>
+                </div>
+            </div>
+        </div>
+    </body>
+    <footer>
+        <div class="footerNav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about-me.html">About</a></li>
+                <li><a href="experience.html">Experience</a></li>
+                <li><a href="projects.html">Projects</a></li>
+            </ul>
+        </div>
+        <div class="spacer"></div>
+        <div class="footerContactInfo">
+            <h1>Email:</h1>
+            <p>vishnusreekanth1577@gmail.com</p>
+	        <p>vishnus@terpmail.umd.edu</p>
+        </div>
+    </footer>
+</html>

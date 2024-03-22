@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+        <title>Vishnu Sreekanth</title>
+        <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+        <script>
+
+            function scrollToSpecifiedSection(specifiedSection) {
+                document.getElementById(specifiedSection).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            }
+
+            function showOrHidePopUpMenu() {
+                if (document.getElementById("popUpMenu").style.display === "block") {
+                    document.getElementById("popUpMenu").style.display = "none";
+                } else {
+                    document.getElementById("popUpMenu").style.display = "block"
+                }
+            }
+            
+        </script>
+    </head> 
+    <nav>
+        <div class="navBarLogo">
+            <a href="index.html"><img src="img/MainLogo.png"></a>
+        </div>
+        <div class="navBarLinks">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about-me.html">About</a></li>
+                <li><a href="experience.html">Experience</a></li>
+                <li><a href="projects.html" class="alreadyOnPageOfLink">Projects</a></li>
+            </ul>
+            <div class="hamburgerMenu">
+                <img src="img/HamburgerMenu.png" onclick="showOrHidePopUpMenu()">
+            </div>
+        </div>
+        <div class="break"></div>
+        <div id="popUpMenu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about-me.html">About</a></li>
+                <li><a href="experience.html">Experience</a></li>
+                <li><a href="projects.html" class="alreadyOnPageOfLink">Projects</a></li>
+            </ul>
+        </div>
+    </nav>
+    <body>
+        <div id="courseworkProjectsPage">
+            <h1>
+                Select Coursework Projects
+            </h1>
+            <div class="centeredParagraph">
+                <p>
+                    This is a list of a select few projects that I have done for coursework. Code not shared 
+                    as per academic policy.
+                </p>
+            </div>
+            <div class="row">
+                <div class="rowText">
+                    <p>
+                        <strong>'Blueberry Crisp' Processor</strong><br><br>
+                        Language: C<br><br>
+                        A simulated processor called the Blueberry Crisp (a twist on Raspberry Pi). Used bit masking to decode 
+                        instructions and use registers.
+                    </p> 
+                </div>
+                <div class="rowImage">
+                    <img src="img/ComputerSystemInCircle.png">
+                </div>
+            </div>
+            <div class="row">
+                <div class="rowText">
+                    <p>
+                        <strong>Regexp Engine</strong><br><br>
+                        Language: OCaml<br><br>
+                        Methods representing nondeterministic and deterministic finite state automata from regexps.
+                    </p> 
+                </div>
+                <div class="rowImage">
+                    <img src="img/FunctionalProgrammingInCircle.png">
+                </div>
+            </div>
+            <div class="row">
+                <div class="rowText">
+                    <p>
+                        <strong>Submission Server</strong><br><br>
+                        Language: C<br><br>
+                        A simulated programming assignment verification and submission server.
+                    </p> 
+                </div>
+                <div class="rowImage">
+                    <img src="img/ServerInCircle.png">
+                </div>
+            </div>
+            <div class="row">
+                <div class="rowText">
+                    <p>
+                        <strong>MIPS Assembly Project</strong><br><br>
+                        Language: MIPS Assembly<br><br>
+                        Translations to MIPS Assembly code for various C programs.
+                    </p> 
+                </div>
+                <div class="rowImage">
+                    <img src="img/HammerInCircle.png">
+                </div>
+            </div>
+            <div class="row">
+                <div class="rowText">
+                    <p>
+                        <strong>Polymorphic Binary Search Tree</strong><br><br>
+                        Language: Java<br><br>
+                        Fully polymorphic binary search tree, using a functional programming paradigm.
+                    </p> 
+                </div>
+                <div class="rowImage">
+                    <img src="img/BinarySearchTreeInCircle.png">
+                </div>
+            </div>
+            <div class="row">
+                <div class="rowText">
+                    <p>
+                        <strong>Blackjack</strong><br><br>
+                        Language: Java<br><br>
+                        The full game of blackjack. Integrated with a UI library.
+                    </p> 
+                </div>
+                <div class="rowImage">
+                    <img src="img/TriviaInCircle.png">
+                </div>
+            </div>
+            <div class="row">
+                <div class="rowText">
+                    <p>
+                        <strong>Priority Queue Management</strong><br><br>
+                        Language: C<br><br>
+                        Methods implementing a priority queue using a binary search tree.
+                    </p> 
+                </div>
+                <div class="rowImage">
+                    <img src="img/StackOfBooksInCircle.png">
+                </div>
+            </div>
+            <div class="centeredParagraph returnToProjects">
+                <p>
+                    Click below to go back to Projects.
+                </p>
+                <a href="projects.html">
+                    <button>Projects</button>
+                </a>
+            </div>
+        </div>
+    </body>
+    <footer>
+        <div class="footerNav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about-me.html">About</a></li>
+                <li><a href="experience.html">Experience</a></li>
+                <li><a href="projects.html">Projects</a></li>
+            </ul>
+        </div>
+        <div class="spacer"></div>
+        <div class="footerContactInfo">
+            <h1>Email:</h1>
+            <p>vishnusreekanth1577@gmail.com</p>
+	        <p>vishnus@terpmail.umd.edu</p>
+        </div>
+    </footer>
+</html>

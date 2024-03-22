@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+        <title>Vishnu Sreekanth</title>
+        <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+        <script>
+
+            function scrollToSpecifiedSection(specifiedSection) {
+                document.getElementById(specifiedSection).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            }
+
+            function showOrHidePopUpMenu() {
+                if (document.getElementById("popUpMenu").style.display === "block") {
+                    document.getElementById("popUpMenu").style.display = "none";
+                } else {
+                    document.getElementById("popUpMenu").style.display = "block"
+                }
+            }
+
+        </script>
+    </head> 
+    <nav>
+        <div class="navBarLogo">
+            <a href="index.html"><img src="img/MainLogo.png"></a>
+        </div>
+        <div class="navBarLinks">
+            <ul>
+                <li><a href="index.html" class="alreadyOnPageOfLink">Home</a></li>
+                <li><a href="about-me.html">About</a></li>
+                <li><a href="experience.html">Experience</a></li>
+                <li><a href="projects.html">Projects</a></li>
+            </ul>
+            <div class="hamburgerMenu">
+                <img src="img/HamburgerMenu.png" onclick="showOrHidePopUpMenu()">
+            </div>
+        </div>
+        <div class="break"></div>
+        <div id="popUpMenu">
+            <ul>
+                <li><a href="index.html" class="alreadyOnPageOfLink">Home</a></li>
+                <li><a href="about-me.html">About</a></li>
+                <li><a href="experience.html">Experience</a></li>
+                <li><a href="projects.html">Projects</a></li>
+            </ul>
+        </div>
+    </nav>
+    <header>
+        <div class="mainHomepageText">
+            <h1>Hello! I'm Vishnu Sreekanth.</h1>
+            <p>
+            Welcome to my website! I'm an undergraduate student eager to learn and contribute as much as I can 
+            in the field of computer science.
+            </p>
+            <button onclick="scrollToSpecifiedSection('contact')">
+                Contact
+            </button>
+        </div>
+    </header>
+    <body>
+        <div id="aboutMePreview">
+            <h1>
+                About Me
+            </h1>
+            <div class="row">
+                <div class="rowText">
+                    <p>
+                        I'm currently a rising junior at the University of Maryland, College 
+                        Park. I am majoring in Computer Science and am pursuing an Upper 
+                        Level Concentration in Mathematics. I'm interested in software engineering, 
+                        mobile app development, UI/UX design, and databases.
+                    </p>   
+                    <a href="about-me.html">
+                        <button>More</button>
+                    </a>
+                </div>
+                <div class = "rowImage">
+                    <img src="img/HomepageAboutGraphic.png">
+                </div>
+            </div>
+        </div>
+        <div id="experiencePreview">
+            <h1>
+                My Experience
+            </h1>
+            <div class="row">
+                <div class="rowText">
+                    <p>
+                        As an undergraduate student, I have experience in a variety of programming languages 
+                        and facets of software development through coursework and personal projects. 
+                        I also interned in UI/UX design.
+                    </p>   
+                    <a href="experience.html">
+                        <button>More</button>
+                    </a>
+                </div>
+                <div class = "rowImage">
+                    <img src="img/HomepageExperienceGraphic.png">
+                </div>
+            </div>
+        </div>
+        <div id="projectsPreview">
+            <h1>
+                My Projects
+            </h1>
+            <div class="row">
+                <div class="rowText">
+                    <p>
+                        I've worked on a variety of software projects, each spanning various disciplines.
+                        Since I love digital art, in these projects, I've created many modern icons from scratch, to hone my graphic 
+                        design skills.
+                    </p>   
+                    <a href="projects.html">
+                        <button>More</button>
+                    </a>
+                </div>
+                <div class = "rowImage">
+                    <img src="img/HomepageProjects.png">
+                </div>
+            </div>
+        </div>
+        <div id="contact">
+            <h1>
+                Contact
+            </h1>
+            <div class="centeredParagraph">
+                <p>
+                    My socials are below. Feel free to email me!
+                </p>
+            </div>
+            <div class="socials">
+                <ul class="socials-list">
+                    <li>
+                        <img src="img/EmailIcon.png">
+                        vishnusreekanth1577@gmail.com
+                    </li>
+                    <li>
+                        <img src="img/EmailIcon.png">
+                        vishnus@terpmail.umd.edu
+                    </li>
+                    <li>
+                        <img src="img/Linkedin.png">
+                        <a href="https://www.linkedin.com/in/vishnu-sreekanth-785794235/" target="_blank">Vishnu Sreekanth</a>
+                    </li>
+                    <li>
+                        <img src="img/Github.png">
+                        <a href="https://github.com/vishnusrk" target="_blank">vishnusrk</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </body>
+    <footer>
+        <div class="footerNav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about-me.html">About</a></li>
+                <li><a href="experience.html">Experience</a></li>
+                <li><a href="projects.html">Projects</a></li>
+            </ul>
+        </div>
+        <div class="spacer"></div>
+        <div class="footerContactInfo">
+            <h1>Email:</h1>
+            <p>vishnusreekanth1577@gmail.com</p>
+	        <p>vishnus@terpmail.umd.edu</p>
+        </div>
+    </footer>
+</html>

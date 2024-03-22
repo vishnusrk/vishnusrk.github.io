@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+        <title>Vishnu Sreekanth</title>
+        <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+        <script>
+            
+            function scrollToSpecifiedSection(specifiedSection) {
+                document.getElementById(specifiedSection).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            }
+
+            function showOrHidePopUpMenu() {
+                if (document.getElementById("popUpMenu").style.display === "block") {
+                    document.getElementById("popUpMenu").style.display = "none";
+                } else {
+                    document.getElementById("popUpMenu").style.display = "block"
+                }
+            }
+
+        </script>
+    </head> 
+    <nav>
+        <div class="navBarLogo">
+            <a href="index.html"><img src="img/MainLogo.png"></a>
+        </div>
+        <div class="navBarLinks">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about-me.html" class="alreadyOnPageOfLink">About</a></li>
+                <li><a href="experience.html">Experience</a></li>
+                <li><a href="projects.html">Projects</a></li>
+            </ul>
+            <div class="hamburgerMenu">
+                <img src="img/HamburgerMenu.png" onclick="showOrHidePopUpMenu()">
+            </div>
+        </div>
+        <div class="break"></div>
+        <div id="popUpMenu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about-me.html" class="alreadyOnPageOfLink">About</a></li>
+                <li><a href="experience.html">Experience</a></li>
+                <li><a href="projects.html">Projects</a></li>
+            </ul>
+        </div>
+    </nav>
+    <body>
+        <div id="aboutMePage">
+            <h1>
+                About Me
+            </h1>
+            <div class="row">
+                <div class="rowText">
+                    <p>
+                        I am currently a rising junior at the University of Maryland, College Park majoring in Computer Science. 
+                        In addition, I am pursuing an upper level concentration in Mathematics. I am passionate about software engineering, 
+                        mobile application development, UI/UX design, and database design. I aspire to be a T-shaped developer with 
+                        expertise in both frontend and backend development.
+                    </p>   
+                </div>
+                <div class="rowImage">
+                    <img src="img/HomepageAboutGraphic.png">
+                </div>
+            </div>
+            <div class="row">
+                <div class="rowImage leftAlignedImage">
+                    <img src="img/HobbiesGraphic.png">
+                </div>
+                <div class="rowText rightAlignedText">
+                    <p>
+                        I am based in Columbia, Maryland. I enjoy cricket, tennis, table tennis, geography/history trivia, 
+                        graphic design, and playing video games. I have a love for learning new things, especially any new programming
+                        language or framework.
+                    </p>   
+                </div>
+            </div>
+            <div class="centeredParagraph nextSectionPreview">
+                <p>
+                    Click below to see my technical experience.
+                </p>
+                <a href="experience.html">
+                    <button>Experience</button>
+                </a>
+            </div>
+        </div>
+    </body>
+    <footer>
+        <div class="footerNav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about-me.html">About</a></li>
+                <li><a href="experience.html">Experience</a></li>
+                <li><a href="projects.html">Projects</a></li>
+            </ul>
+        </div>
+        <div class="spacer"></div>
+        <div class="footerContactInfo">
+            <h1>Email:</h1>
+            <p>vishnusreekanth1577@gmail.com</p>
+	        <p>vishnus@terpmail.umd.edu</p>
+        </div>
+    </footer>
+</html>
