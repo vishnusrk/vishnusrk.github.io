@@ -259,26 +259,28 @@ button a {
 
 }
 
-@media only screen and (orientation: landscape) {
+@media only screen and (max-height: 450px) {
 
-    .navBarLogo img {
-        width: 200px;
-        height: auto;
-        padding-left: 10%;
-        padding-top: 10%;
-        padding-bottom: 10%;
-    }
+    @media only screen and (orientation: landscape) {
 
-    .mainHomepageText h1 {
-        font-size: 200%;
-    }
+        .navBarLogo img {
+            width: 200px;
+            height: auto;
+            padding-left: 10%;
+            padding-top: 10%;
+            padding-bottom: 10%;
+        }
     
-    .mainHomepageText p {
-        font-size: 75%;
-        padding-bottom: 15px;
+        .mainHomepageText h1 {
+            font-size: 200%;
+        }
+        
+        .mainHomepageText p {
+            font-size: 75%;
+            padding-bottom: 15px;
+        }
+    
     }
-
-
 
 }
 
