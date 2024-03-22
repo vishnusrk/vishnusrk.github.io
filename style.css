@@ -259,31 +259,6 @@ button a {
 
 }
 
-@media only screen and (max-height: 450px) {
-
-    @media only screen and (orientation: landscape) {
-
-        .navBarLogo img {
-            width: 200px;
-            height: auto;
-            padding-left: 10%;
-            padding-top: 10%;
-            padding-bottom: 10%;
-        }
-    
-        .mainHomepageText h1 {
-            font-size: 200%;
-        }
-        
-        .mainHomepageText p {
-            font-size: 25%;
-            padding-bottom: 15px;
-        }
-    
-    }
-
-}
-
 #aboutMePreview, #experiencePreview, #projectsPreview, #contact {
     scroll-margin-top: 80px;
 }
@@ -997,4 +972,29 @@ footer {
         margin-bottom: 40px;
     }
   
+}
+
+@media only screen and (max-height: 450px) {
+
+    @media only screen and (orientation: landscape) {
+
+        .navBarLogo img {
+            width: 200px;
+            height: auto;
+            padding-left: 10%;
+            padding-top: 10%;
+            padding-bottom: 10%;
+        }
+    
+        .mainHomepageText h1 {
+            font-size: 200%;
+        }
+        
+        .mainHomepageText p {
+            font-size: 25%;
+            padding-bottom: 15px;
+        }
+    
+    }
+
 }
