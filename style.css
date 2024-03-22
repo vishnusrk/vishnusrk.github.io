@@ -748,15 +748,6 @@ footer {
     height: auto;
 }
 
-.iconBubble p {
-    font-family: 'Lato', sans-serif;
-    font-size: 0.8rem;
-    font-weight: 300;
-    margin-top: 5px;
-    text-align: center;
-    min-width: 0;
-}
-
 @media only screen and (max-width: 1150px) {
 
     .iconRow {
@@ -791,10 +782,6 @@ footer {
         flex-wrap: wrap;
     }
 
-    .iconBubble p {
-        font-size: 0.7rem;
-    }
-
     .iconBubble img {
         width: 80%;
         height: auto;
@@ -819,11 +806,6 @@ footer {
 
     .iconBubble {
         padding: 5%;
-    }
-
-    .iconBubble p {
-        font-size: 0.5rem;
-        margin-top: 0px;
     }
 
     .iconBubble img {
